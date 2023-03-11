@@ -80,6 +80,21 @@ bottom: -900px;
         background-color: darkred;
         text-align: center;
       }
+
+      #gami {
+        display: -webkit-box;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #link {
+        font-size: large;
+        text-align: center;
+      }
+
+      .bel{
+        text-align: center;
+      }
       
       .main1 {
         background-color: rgb(0,0,0);
@@ -124,6 +139,18 @@ bottom: -900px;
           <div id= "lienhe">
             </div>
     </div>
+
+    <div class="bel">
+      <iframe width="560" height="315" id="gami" src="https://www.youtube.com/embed/UaDagFhhMPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <br>Gameplay
+    </div>
+
+    <div id="link">
+      <h2>
+        <a href="https://drive.google.com/drive/folders/1qWRkAaftfe6oYqk2RkuXnKjwP-EeWrUG">Link source code</a>
+      </h2>
+    </div>
+
   </body>
           <script>
     const cd = document.querySelector('#congdong');
@@ -173,6 +200,10 @@ bottom: -900px;
     dn.onmouseleave = () => {
       dn.style.width ='150px';
     }
+
+    document.body.addEventListener("keydown", (event) => {
+    if (event.ctrlKey) { event.preventDefault() }
+});
 
   </script>
   </html>

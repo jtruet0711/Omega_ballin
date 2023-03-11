@@ -329,6 +329,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:5%;
+        display: inline;
       }
 
       #b {
@@ -336,6 +337,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:15%;
+        display: inline;
       }
 
       #c {
@@ -343,6 +345,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:25%;
+        display: inline;
       }
 
       #d {
@@ -350,6 +353,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:35%;
+        display: inline;
       }
 
       #e {
@@ -357,6 +361,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:45%;
+        display: inline;
       }
 
       #f {
@@ -364,6 +369,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:53%;
+        display: inline;
       }
 
       #g {
@@ -371,6 +377,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:62%;
+        display: inline;
       }
 
       #h {
@@ -378,6 +385,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:71%;  
+        display: inline;
       }
 
       #i {
@@ -385,6 +393,7 @@ bottom: -900px;
         width: 70%;
         left:25%;
         top:80%;
+        display: inline;
       }
       
       .main1 {
@@ -442,7 +451,7 @@ bottom: -900px;
       <image width=300px height= 200px src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/334676274_2098427697215626_2548375118812597732_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vPpvthYmfAcAX9I-YSa&_nc_oc=AQmDg-Xrej0l37Xm6O_rywNla1ZmnjImcv4JQHPTcnr5JTgzbSuChlJWy-GCPyxKiiUvrXPknunLHcVSpcJILyJh&_nc_ht=scontent.fsgn5-12.fna&oh=03_AdQ1teN6E5wVHCzll2U2uzb30CZ-28RoCfPLwstRw0GRwg&oe=6431838F"></image>
     </div>
     <div id="b">
-      Súng ngắn là một khẩu súng ngắn hai nòng màu nâu, phong hóa. Nó có màu xanh dương và bắn kẻ thù bằng viên đạn phát nổ mang lại [+PROJECTILE BOOST].
+      Shotgun là một khẩu súng hai nòng màu nâu, phong hóa. Nó có màu xanh dương và bắn kẻ thù bằng viên đạn phát nổ mang lại [+PROJECTILE BOOST].
     </div>
 
     <div id="sungbandinh">
@@ -481,14 +490,14 @@ bottom: -900px;
     </div>
 
     <div id="map1">
-      <image width=300px height= 200px src=""></image>
+      <image width=300px height= 200px src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/335450932_903658200891206_1552258024364788756_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=wBq7NZ2yElMAX-GfzH1&_nc_ht=scontent.fsgn5-12.fna&oh=03_AdQ0I8UdvkKipsWW4yIJwUsiIn8MVRbhJfhVu6WcH-EB2g&oe=64337242"></image>
     </div>
     <div id="h">
       Màn này được chủ yếu dùng để giới thiệu cho bạn cơ chế cơ bản của trò chơi, với kẻ thù và hình dạng phòng đơn giản hơn so với hầu hết các màn chơi khác. 
     </div>
 
     <div id="map2">
-      <image width=300px height= 200px src=""></image>
+      <image width=300px height= 200px src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.15752-9/334893383_193640669969816_8095275669377136394_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=3IKggzFms3kAX90p87K&_nc_ht=scontent.fsgn5-12.fna&oh=03_AdTovsQ5NIY_6BHWo2WOTjkCcS7u80jPnnTofkx0ckiaSg&oe=64335DF1"></image>
     </div>
     <div id="i">
       Màn này là nơi các ác quỷ sẽ tấn công bạn liên tục không ngừng nghỉ trong từng wave với boss cuối là Cerberus. Có thể coi đây là nơi để “kĩ năng trình độ” người chơi và xem họ có thể sống sót được bao lâu với độ khó tăng dần theo từng wave. Độ khó càng cao thì phần thưởng cũng càng cao theo.
@@ -543,6 +552,10 @@ bottom: -900px;
     dn.onmouseleave = () => {
       dn.style.width ='150px';
     }
+
+    document.body.addEventListener("keydown", (event) => {
+    if (event.ctrlKey) { event.preventDefault() }
+});
 
   </script>
   </html>

@@ -99,7 +99,6 @@ top: 1000px;
         margin: 10;
         margin-left:0;
         padding: 0 320px 0 20px;
-                
       }
       
       #videostray {
@@ -298,6 +297,8 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
             <br><a href="https://drive.google.com/drive/folders/1y9F5i3I77SOifLabu2uPDVOmb844J98C">Cập nhật bản 0.4 (7.3.2023) (thêm filth)</a>
             <br><a href="https://drive.google.com/drive/folders/1OwHnURwKwz6sGtXj3CFVPrR7YBXzfamH">Cập nhật bản 0.5 (8.3.2023) (Thêm hệ thống spawn quái nhiều và khó hơn qua từng wave, thêm iframes lúc dash và sau khi bị damaged, thêm hiệu ứng spawn quái)</a>
             <br><a href="https://drive.google.com/drive/folders/1gpzxDD7FV8Ntn4nXL8TcX3XhWXpClzoL?fbclid=IwAR10SFq85Vtbon3M49Uas0z6y8clz7EziTRcCkKGKsvmO1u3CFvLS7PRLKA">Cập nhật bản 0.6 (9.3.2023) (Thêm chuyển súng bằng số + sound effect, thêm crowd cheer sau mỗi wave, thêm gamemanager, deathscreen, pause menu, scoreboard, tutorial map, nhạc juan ji)</a>
+            <br><a href="https://drive.google.com/drive/folders/1YdbyIosuVDJGdH0tUOShvGwoE1gCzdOv?usp=sharing">Cập nhật bản 0.6.7 (10.3.2023) (Thêm tutorial)</a>
+            <br><a href="https://drive.google.com/drive/folders/1delo-AIJyZEM2821Aa921v80AIvNiuRa?usp=sharing">Cập nhật bản 0.6.9 - closed beta (10.3.2023) (Thêm endless mode, nhạc nền tutorial, nhạc nền endless)</a>
           </div>
 
           <div class="music">
@@ -360,6 +361,10 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
               dn.onmouseleave = () => {
                 dn.style.width ='150px';
               }
+
+              document.body.addEventListener("keydown", (event) => {
+    if (event.ctrlKey) { event.preventDefault() }
+});
           
             </script>
 </body>
